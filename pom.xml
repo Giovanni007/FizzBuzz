@@ -16,6 +16,7 @@
 		<junit.jupiter.version>5.5.2</junit.jupiter.version>
 		<hamcrest.version>2.1</hamcrest.version>
 		<java.version>1.8</java.version>
+		<logback.version>1.2.3</logback.version>
 	</properties>
 
 	<build>
@@ -52,15 +53,10 @@
 			<version>${hamcrest.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.13</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.13</version>
-		</dependency>
+		  <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
 	</dependencies>
 </project>
