@@ -1,0 +1,11 @@
+:root {
+  --mainColor: #022a53;
+  --secondColor: #074db6;
+  --thirdColor: #2c75e2;
+}
+
+body {
+  background-color: #e3ebec;
+  min-width: 300px;
+  min-height: 300px;
+}

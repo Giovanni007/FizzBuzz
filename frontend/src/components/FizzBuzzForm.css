@@ -1,0 +1,39 @@
+.fizzBuzzForm{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    min-width: 60%;
+    max-width: 80%;
+    background-color: white;
+    display: inline-block;
+    padding: 2vw;
+}
+
+.fizzBuzzForm h1{
+    margin: 1rem 0 0.5em 0;
+	color: var(--thirdColor);
+	font-family: 'Ultra', sans-serif;   
+	font-size: 3rem;
+	line-height: 1.25rem;
+	text-shadow: 0 2px white, 0 3px var(--mainColor);
+}
+
+.fizzBuzzForm input{
+    margin-right: 2vw;
+    text-align: right;
+    width: 4vw;
+}
+
+.fizzBuzzForm input[type=submit]{
+    display: block;
+    position: relative;
+    font-size: 1rem;
+    width: auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 2vh;
+    cursor:pointer;
+}
+
+.fizzBuzzForm input[type=submit]:hover {
+    box-shadow: 0 6px 8px 0 var(--thirdColor);
+  }
