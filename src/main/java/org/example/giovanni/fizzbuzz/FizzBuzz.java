@@ -1,6 +1,5 @@
 package org.example.giovanni.fizzbuzz;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
@@ -8,23 +7,23 @@ import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public class FizzBuzz {
 	public static final Logger logger = LoggerFactory.getLogger(FizzBuzz.class);
 
-	static final String MULTIPLE_OF_3_STR = "fizz";
-	static final String MULTIPLE_OF_5_STR = "buzz";
-	static final String MULTIPLE_OF_15_STR = "fizzbuzz";
-	static final String CONTAINS_3_STR = "alfresco";
-	static final String LINE_SEPARATOR = System.getProperty("line.separator");
-
+	public static final String MULTIPLE_OF_3_STR = "fizz";
+	public static final String MULTIPLE_OF_5_STR = "buzz";
+	public static final String MULTIPLE_OF_15_STR = "fizzbuzz";
+	public static final String CONTAINS_3_STR = "alfresco";
+	public static final String LINE_SEPARATOR = System.getProperty("line.separator");
 
 	public String getFizzBuzzString(int x, int y) {
 		Map<String,Integer> reportMap = initializeReportMap();
 		
 		//Check range 
-		if(x<=0 || y <= 0) throw new IllegalArgumentException();
+		if(x<=0 || y <= 0) throw new IllegalArgumentException("Invalid Input");
 		int start = Integer.min(x, y);
 		int end = Integer.max(x, y);
 		
